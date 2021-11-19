@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="eT_lMBottomDefault">-10dp</dimen>
+    <dimen name="eT_lMRightDefault">80dp</dimen>
+    <dimen name="lMarginDefault">16dp</dimen>
+    <dimen name="lWidth_img_Location">45dp</dimen>
+    <dimen name="lHeight_img_Location">45dp</dimen>
+    <dimen name="minHeight_Fix">48dp</dimen>
+    <dimen name="txSize_DatosPersonales">20sp</dimen>
+    <dimen name="tv_lMTop_Default">30dp</dimen>
+    <dimen name="txSize_tv">16sp</dimen>
+    <dimen name="txSize_tv_Title">20sp</dimen>
+    <dimen name="txSize_chBox_Sr">20sp</dimen>
+    <dimen name="txSize_LeerCondiciones">18sp</dimen>
+    <dimen name="eT_lMTop">32dp</dimen>
+    <dimen name="eT_lMStartEnd_Small">8dp</dimen>
+    <dimen name="eT_lMStartEnd">24dp</dimen>
+</resources>

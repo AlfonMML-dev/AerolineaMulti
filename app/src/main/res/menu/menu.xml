@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/item_MiCuenta">
+        <menu>
+            <item android:title="@string/item_DatosPersonales" />
+            <item android:title="@string/item_DocumentosViaje" />
+            <item android:title="@string/item_CompaViaje" />
+        </menu>
+    </item>
+    <item android:title="@string/item_MisViajes" />
+    <item android:title="@string/item_TarjetasEmbarque" />
+    <item android:title="@string/item_InfoVuelo" />
+    <item android:title="@string/item_InfoActualizada" />
+    <item android:title="@string/item_ValesRegalo" />
+    <item android:title="@string/item_RevistaVuelo" />
+    <item android:title="@string/item_TerminosCondiciones" />
+    <item android:title="@string/item_CentroAyuda" />
+    <item android:title="@string/item_ContactarAerolinea" />
+    <item android:title="@string/item_PoliticaPrivacidad" />
+    <item android:title="@string/item_ConfigPrivacidad" />
+</menu>

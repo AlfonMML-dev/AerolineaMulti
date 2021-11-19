@@ -1,0 +1,13 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+  <color name="primaryColor_RedAero">#f44336</color>
+  <color name="primaryLightColor_RedAero">#ff7961</color>
+  <color name="primaryDarkColor_RedAero">#ba000d</color>
+  <color name="secondaryColor_RedAero">#1976d2</color>
+  <color name="secondaryLightColor_RedAero">#F363A4FF</color>
+  <color name="secondaryDarkColor_RedAero">#004ba0</color>
+  <color name="brightBlue_RedAero">#DEF0F6</color>
+  <color name="primaryTextColor">#252424</color>
+  <color name="color_iBt_Location">#FFE082</color>
+  <color name="color_iBt_Location2">#FA9482</color>
+</resources>

@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AerolineaMulti" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Aerolinea" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor_RedAero</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor_RedAero</item>
+        <item name="colorOnPrimary">@color/primaryLightColor_RedAero</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryLightColor_RedAero</item>
+        <item name="colorSecondaryVariant">@color/secondaryColor_RedAero</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/bt_Style_Theme</item>
+        <item name="android:headerBackground">@color/primaryDarkColor_RedAero</item>
+        <item name="android:colorBackground">@color/brightBlue_RedAero</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+    <style name="bt_Style_Theme" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bt_style</item>
+        <item name="backgroundTint"/>
+        <item name="android:textSize">@dimen/txSize_tv</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+</resources>

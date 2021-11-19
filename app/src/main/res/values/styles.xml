@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="chBox_Sr_Sra">
+        <item name="android:textSize">@dimen/txSize_chBox_Sr</item>
+    </style>
+
+    <style name="ibt_Style">
+        <item name="background">@drawable/ibt_style</item>
+    </style>
+
+    <style name="txVw_DatosPersonales">
+        <item name="android:textSize">@dimen/txSize_DatosPersonales</item>
+    </style>
+
+    <style name="tv_Style">
+        <item name="android:textSize">@dimen/txSize_tv</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="tv_Title_Style">
+        <item name="android:textSize">@dimen/txSize_tv_Title</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+</resources>

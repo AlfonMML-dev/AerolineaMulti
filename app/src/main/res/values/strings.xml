@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">AerolineaMulti</string>
+    <!-- strings pertenecientes a la interfaz activity_main -->
+    <string name="bt_Comprar">Comprar</string>
+    <string name="chBox_Sr">Sr</string>
+    <string name="chBox_Sra">Sra</string>
+    <string name="chBox_Srto">Srto</string>
+    <string name="chBox_Srta">Srta</string>
+    <string name="chBox_PrimeraClase">Desea viajar en primera clase</string>
+    <string name="chBox_AsientoVentanilla">Asiento con ventanilla</string>
+    <string name="chBox_Mascota">Mascota</string>
+    <string name="chBox_Desayuno">Desayuno</string>
+    <string name="chBox_Almuerzo">Almuerzo</string>
+    <string name="chBox_Cena">Cena</string>
+    <string name="contentDesc_imgView_TacaLogo">Logo de la empresa</string>
+    <string name="contentDesc_imgView_Location">Icono para poner tu ubicación</string>
+    <string name="eT_hint"></string>
+    <string name="eT_hint_Origen">Origen</string>
+    <string name="eT_hint_Destino">Destino</string>
+    <string name="rBt_Si">Sí</string>
+    <string name="rBt_No">No</string>
+    <string name="scrollAerolinea">Scroll que abarca toda la pantalla de la interfaz activity_main</string>
+    <string name="switch_SeguroAdicional">Viajar con seguro adicional</string>
+    <string name="switch_AccesoPreferente">Acceso preferente</string>
+    <string name="tV_DatosPersonales">Datos personales</string>
+    <string name="tV_Nombre">Nombre</string>
+    <string name="tV_Apellidos">Apellidos</string>
+    <string name="tV_Direccion">Dirección</string>
+    <string name="tV_Telefono">Teléfono</string>
+    <string name="tV_Correo">E-Mail</string>
+    <string name="tv_Movilidad">Movilidad reducida</string>
+    <string name="tv_NumMascotas">Número de mascotas</string>
+    <string name="tv_LeerCondiciones">Lee los términos y condiciones de la empresa</string>
+
+    <!-- strings pertenecientes a la interfaz condiciones_activity -->
+    <string name="chBox_AceptacionTerminos">He leído y acepto los términos y condiciones</string>
+    <string name="scrollCondiciones">Scroll que contiene las condiciones de la empresa</string>
+    <string name="tv_textScrollView"></string>
+    <string name="tv_CondicionesSeguro">ARTÍCULO 12 - PRESTACIÓN DE SERVICIOS ADICIONALES
+Cuando los servicios de cualquier tercero que ofrezca una prestación de servicios que no sea el transporte en avión (como traslados en tren y autocar, reservas de hoteles o albergues, alquiler de vehículos, servicios de aparcamiento o servicios de acceso preferente en los controles de seguridad del aeropuerto) se promocionen en nuestro sitio web o en cualquier otro medio de comunicación, esos servicios estarán a cargo de los terceros y se aplicarán los términos y condiciones de dichos terceros.
+
+12.2
+No nos hacemos responsables de la correcta prestación de los servicios o de cualquier otra contingencia de estos terceros proveedores de servicios, y particularmente no somos responsables de los retrasos, las cancelaciones o errores en la información publicada sobre transbordos
+Si, después de haber seleccionado y pagado un servicio de viaje, usted reserva servicios de viaje adicionales para su viaje o vacación a través de nuestro sitio web, no gozará de los derechos que se aplican a los viajes combinados en virtud de la Directiva (UE) 2015/2302. Por lo tanto, no seremos responsables de la correcta ejecución de dichos servicios de viaje adicionales. En caso de problemas, sírvase ponerse en contacto con el prestador de servicios correspondiente.
+
+No obstante, si usted reserva servicios de viaje adicionales durante la misma visita a nuestro sitio web, estos servicios formarán parte de unos servicios de viaje vinculados. En este caso, tal y como exige el Derecho de la Unión Europea, hemos suscrito una garantía de protección para reembolsarle los pagos que nos haya abonado en concepto de servicios que no se hayan ejecutado en el improbable supuesto de nuestra insolvencia y, en caso necesario, para su repatriación. Tenga en cuenta que no se procederá al reembolso en caso de insolvencia del prestador de servicios correspondiente.
+Más información sobre protección frente a la insolvencia, cliquee aquí.
+
+12.3
+12.3.1   Si te hemos enviado un correo electrónico confirmando que la combinación de servicios que has reservado constituye un viaje combinado, te beneficiarás de todos los derechos de la UE aplicables a los viajes combinados y seremos responsables de su correcta ejecución.
+
+12.3.2   Puedes ceder el viaje combinado a otra persona, con un preaviso razonable y, en su caso, con sujeción al pago de gastos adicionales, incluida la tasa de cambio de nombre que se indica en nuestra Tabla de cargos correspondiente al componente de vuelo.
+
+12.3.3   Puedes cancelar la reserva del viaje combinado, sujeto al pago de un cargo por cancelación igual al precio del viaje combinado, menos cualquier ahorro de costes recuperado de los terceros que actúen como proveedores de servicios de viajes. En caso de que se produzcan circunstancias inevitables y extraordinarias en el destino del viaje combinado que afecten la ejecución de mismo, puedes tener derecho a cancelar tu reserva sin ningún cargo adicional, en cuyo caso tendrás derecho a un reembolso, pero no a ninguna otra compensación.
+
+12.3.4   Nos reservamos el derecho de realizar cambios en tu viaje combinado. Los pequeños cambios (incluido un cambio de la hora de vuelo de menos de 24 horas, un cambio de transportista, un cambio de aeropuerto de salida o de destino a otro dentro de la misma región, un cambio de alojamiento o alquiler de coches a otro de la misma categoría o superior) no te darán derecho a reclamar ninguna compensación.
+
+12.3.5   Si hay algún problema con algún componente de tu viaje combinado, ponte en contacto primero con el proveedor correspondiente, en nuestro caso somos responsables del componente de vuelo.  En caso de que el proveedor externo encargado no sea capaz de resolver el problema o haya habido una deficiencia o un fallo significativo en el rendimiento del viaje combinado, debes informarnos de inmediato para que podamos organizar alternativas oportunas.
+
+12.3.6   Contamos con una protección total para reembolsar tus pagos en viajes combinados y, en el caso de que fuese necesario, para garantizar tu repatriación en el improbable caso de que nos declaremos insolventes.  Hemos contratado un seguro de protección frente a la insolvencia con International Protection Limited (IPP), avalado por determinados sindicatos en Lloyd’s. Si se deniegan servicios debido a nuestra insolvencia, los viajeros podrán ponerse en contacto con IPP (IPP Claims at InTrust, Postbus 23212, 2001 KE Rotterdam, the Netherlands; +31 1031 20666; ippclaims@intrust-nl.com) o, en su caso, con the Commission for Aviation Regulation (3rd Floor, Alexandra House, Earlsfort Terrace, Dublin 2, Ireland; +353 (0)1 6611700; info@aviationreg.ie).
+
+12.3.7   Nos reservamos el derecho de finalizar la reserva de tu viaje combinado en caso de que no se nos permita realizarla debido a circunstancias inevitables y extraordinarias. Te notificaríamos de dicha rescisión sin demora indebida.
+
+12.3.8   Si te encuentras en problemas, como no poder regresar según lo programado en el viaje combinado, debido a circunstancias inevitables y extraordinarias, te proporcionaremos asistencia si la solicitas. Esto incluye la provisión de información adecuada sobre servicios sanitarios, autoridades locales y servicios consulares. Asimismo, te ayudaremos a realizar comunicaciones a distancia y a organizar planes de viaje alternativos. Si la dificultad se debe a que has actuado de forma intencionada o negligente, puede que cobremos una tasa razonable por dicha asistencia.
+
+12.3.9   Si tienes una queja y no podemos resolverla, puedes consultar con el servicio de Resolución de litigios en línea (RLL) de la Comisión Europea.  Al rellenar el formulario de la RLL, debes incluir nuestra dirección de correo electrónico (odr@ryanair.com) en el campo de datos del vendedor.  Esta dirección de correo electrónico solo se utiliza para completar el formulario de reclamación de la RLL.  Las consultas enviadas a esta dirección no obtendrán respuesta.
+
+12.3.10 En cualquier caso, como máximo, nuestra responsabilidad estará limitada al triple del coste de un viaje combinado, excepto en casos relacionados con lesiones o daños personales causados intencionadamente o por negligencia.</string>
+    <string name="tv_CondicionesEmpresa">ARTÍCULO 1 - SIGNIFICADO DE DETERMINADAS EXPRESIONES EN LAS PRESENTES CONDICIONES
+En las presentes Condiciones::
+
+“NOSOTROS”, “nuestro” y “nos” significa Ryanair UK, Enterprise House, 2nd Floor, Bassingbourn Road, CM24 1QW, London Stansted Airport, Stansted, Inglaterra.
+
+“USTED”, “suyo” y “su” significa cualquier persona, salvo los miembros de la tripulación, a quien hemos acordado transportar en un vuelo, portadora de nuestro Código Identificador de la Aerolínea (véase también la definición de “pasajero”)
+
+Por “CÓDIGO IDENTIFICADOR DE LA AEROLÍNEA”, se entiende el código de dos letras “RK” o el código de tres letras “RYK” que nos identifican como una compañía aérea.
+
+Por “EQUIPAJE” se entiende los bienes personales que le acompañen en su viaje. Salvo que se especifique lo contrario, incluye tanto su equipaje facturado como su equipaje no facturado.
+
+Por “TALÓN DE EQUIPAJE” se entiende el documento que se expide exclusivamente para identificar el Equipaje facturado.
+
+Por “TARJETA DE EMBARQUE” se entiende el documento en línea titulado “Tarjeta de Embarque”, imprimido para usted o por su cuenta con carácter previo a cualquier vuelo, o bien en un formato alternativo que puede ser expedido por nosotros o por nuestros agentes de handling en un aeropuerto operado por nosotros
+Por "FECHA LÍMITE DE FACTURACIÓN” significa los límites de tiempo que nosotros especificamos y antes de los cuales debe usted haber obtenido su Tarjeta de Embarque y, en su caso, cumplimentado cualquier control de documentos/visado y pagado cualquier tasa sobre el Equipaje Facturado y/o recargo por exceso de equipaje y depositado su Equipaje Facturado en un mostrador de facturación.
+Por “EQUIPAJE FACTURADO” significa el equipaje del que asumimos la custodia y para el cual hemos emitido un Talón de Equipaje.
+
+Por “CONFIRMACIÓN/ITINERARIO” se entiende nuestra web en formato frame con el título  “Itinerario” la cual indica un “Número de Reserva de Vuelo” y muestra “Estatus: Confirmado” y/o el documento con título “Itinerario de Viaje Ryanair UK”, enviado a la dirección de correo electrónico utilizada para la reserva, en ambos casos especificando el/los nombre/s del pasajero, vuelos, horarios y rutas de los vuelos que ha reservado con nosotros.
+
+Per “CONVENIO” se entiende el Convenio de Montreal de 1999.
+Por “DAÑOS” se entiende la muerte, las lesiones o los daños corpotales sufridos por un pasajero, o la perdida total o parcial, el hurto, u otros daños sufridos por el Equipaje que sean consecuencia o estén relacionados con el transporte u otros servicios complementarios que nosotros prestamos.
+Por "PASAJERO" se entiende una persona, a quien hemos acordado transportar en un vuelo, identificada mediante la expedición de la Confirmación/Itinerario. (Véase también la definición de "Usted", "suyo" y "su").
+“NORMATIVA” significa nuestra normativa tal como se establece en el documento titulado “Normativa sobre temas específicos” que esté vigente en cada momento (haz clic aquí).
+
+RYANAIR GROUP está compuesto por Ryanair DAC, Ryanair UK, Laudamotion, Ryanair Sun (Buzz) y Malta Air.
+Por "DEG" se entiende el derecho especial de giro tal como lo define el Fondo Monetario Internacional. (El valor de esta unidad de cuenta se puede consultar en las páginas de economía de los diarios más importantes.)
+
+Por "EQUIPAJE NO FACTURADO" se entiende cualquier parte de su equipaje que no sea el Equipaje Facturado.</string>
+
+    <!-- strings pertenecientes a la interfaz menu -->
+    <string name="item_MiCuenta">Mi cuenta</string>
+    <string name="item_MisViajes">Mis viajes</string>
+    <string name="item_TarjetasEmbarque">Tarjetas de embarque</string>
+    <string name="item_InfoVuelo">Información sobre el vuelo</string>
+    <string name="item_InfoActualizada">Info actualizada</string>
+    <string name="item_ValesRegalo">Vales de regalo</string>
+    <string name="item_RevistaVuelo">Revista de vuelo</string>
+    <string name="item_TerminosCondiciones">Términos y condiciones</string>
+    <string name="item_CentroAyuda">Centro de ayuda</string>
+    <string name="item_ContactarAerolinea">Contactar con la aerolínea</string>
+    <string name="item_PoliticaPrivacidad">Política de privacidad</string>
+    <string name="item_ConfigPrivacidad">Configuración de privacidad</string>
+
+    <!-- strings pertenecientes al submenu de la interfaz menu -->
+    <string name="item_DatosPersonales">Datos personales</string>
+    <string name="item_DocumentosViaje">Mis documentos de viaje</string>
+    <string name="item_CompaViaje">Mis compañeros de viaje</string>
+
+    <!-- strings pertenecientes a la interfaz resumen_compra_activity-->
+    <string name="bt_Cancelar">Cancelar</string>
+    <string name="bt_Confirmar">Confirmar compra</string>
+    <string name="scrollAerolinea_Resumen">Scroll que abarca toda la pantalla de la interfaz resumen_compra_main</string>
+    <string name="tv_NombreCliente">Cliente</string>
+    <string name="tv_NombreClienteDato">En blanco</string>
+    <string name="tv_Origen_Resumen">Origen</string>
+    <string name="tv_Destino_Resumen">Destino</string>
+    <string name="tv_Origen_Resumen_Dato">OrigenDato</string>
+    <string name="tv_Destino_Resumen_Dato">DestinoDato</string>
+    <string name="tv_Extras">Extras seleccionados por </string>
+    <string name="tv_Extras_Datos">Extras datos </string>
+    <string name="tv_Precio_Extras">Precio extras:</string>
+    <string name="tv_Precio_Total">Precio total:</string>
+
+</resources>

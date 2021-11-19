@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumenCompra">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tBar_MenuSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H0_Resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_V0_Resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <ImageView
+        android:id="@+id/imgV_Taca_Logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/contentDesc_imgView_TacaLogo"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H0_Resumen"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_Resumen"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_Resumen"
+        app:layout_constraintTop_toBottomOf="@+id/tBar_MenuSettings"
+        app:srcCompat="@drawable/taca_logo_editado" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/scrollAerolinea_Resumen"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Cancelar_Resumen"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_Resumen"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_Resumen"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_H0_Resumen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_NombreCliente"
+                    style="@style/tv_Title_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_NombreCliente"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_NombreClienteDato"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_NombreClienteDato"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tv_NombreClienteDato"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_NombreCliente" />
+
+                <TextView
+                    android:id="@+id/tv_Origen_Resumen"
+                    style="@style/tv_Title_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/tv_Origen_Resumen"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_Origen_Dato_Resumen"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_Destino_Resumen"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_NombreClienteDato" />
+
+                <TextView
+                    android:id="@+id/tv_Destino_Resumen"
+                    style="@style/tv_Title_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/tv_Destino_Resumen"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_Destino_Dato_Resumen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_Origen_Resumen"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_NombreClienteDato" />
+
+                <TextView
+                    android:id="@+id/tv_Origen_Dato_Resumen"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/tv_Origen_Resumen_Dato"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_Destino_Dato_Resumen"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Origen_Resumen" />
+
+                <TextView
+                    android:id="@+id/tv_Destino_Dato_Resumen"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/tv_Destino_Resumen_Dato"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_Origen_Dato_Resumen"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Destino_Resumen" />
+
+                <TextView
+                    android:id="@+id/tv_Extras"
+                    style="@style/tv_Title_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/tv_Extras"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_Extras_Datos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Origen_Dato_Resumen" />
+
+                <TextView
+                    android:id="@+id/tv_Extras_Datos"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/tv_Extras_Datos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Extras" />
+
+                <TextView
+                    android:id="@+id/tv_Precio_Extras"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/tv_Precio_Extras"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Extras_Datos" />
+
+                <TextView
+                    android:id="@+id/tv_Precio_Total"
+                    style="@style/tv_Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/tv_Precio_Total"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Extras_Datos" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_Confirmar_Resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/bt_Confirmar"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H1_Resumen"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_V1_Resumen" />
+
+    <Button
+        android:id="@+id/bt_Cancelar_Resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/bt_Cancelar"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_H1_Resumen"
+        app:layout_constraintStart_toStartOf="@+id/guideline_V0_Resumen" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_H1_Resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_V1_Resumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

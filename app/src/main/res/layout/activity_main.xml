@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tBar_MenuSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/scrollAerolinea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tBar_MenuSettings">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintL_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgView_Taca_Logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/contentDesc_imgView_TacaLogo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/taca_logo_editado" />
+
+                <EditText
+                    android:id="@+id/eT_Origen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/eT_lMTop"
+                    android:layout_marginEnd="@dimen/eT_lMStartEnd_Small"
+                    android:ems="10"
+                    android:hint="@string/eT_hint_Origen"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColorHint="@color/textColor_ET"
+                    app:layout_constraintEnd_toStartOf="@+id/iBt_Location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgView_Taca_Logo" />
+
+                <EditText
+                    android:id="@+id/eT_Destino"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/eT_lMStartEnd_Small"
+                    android:layout_marginTop="@dimen/eT_lMTop"
+                    android:layout_marginEnd="@dimen/lMarginDefault"
+                    android:ems="10"
+                    android:hint="@string/eT_hint_Destino"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColorHint="@color/textColor_ET"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iBt_Location"
+                    app:layout_constraintTop_toBottomOf="@+id/imgView_Taca_Logo" />
+
+                <ImageButton
+                    android:id="@+id/iBt_Location"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="@dimen/eT_lMTop"
+                    android:layout_marginEnd="@dimen/eT_lMStartEnd"
+                    android:background="@drawable/ibt_style"
+                    android:contentDescription="@string/contentDesc_imgView_Location"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgView_Taca_Logo"
+                    app:srcCompat="@drawable/ic_baseline_add_location_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintL_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txVw_DatosPersonales"
+                    style="@style/txVw_DatosPersonales"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:text="@string/tV_DatosPersonales"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/chBox_Sr"
+                    style="@style/chBox_Sr_Sra"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="48dp"
+                    android:text="@string/chBox_Sr"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txVw_DatosPersonales" />
+
+                <CheckBox
+                    android:id="@+id/chBox_Sra"
+                    style="@style/chBox_Sr_Sra"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="48dp"
+                    android:text="@string/chBox_Sra"
+                    app:layout_constraintStart_toEndOf="@id/chBox_Sr"
+                    app:layout_constraintTop_toBottomOf="@+id/txVw_DatosPersonales" />
+
+                <CheckBox
+                    android:id="@+id/chBox_Srto"
+                    style="@style/chBox_Sr_Sra"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="48dp"
+                    android:text="@string/chBox_Srto"
+                    app:layout_constraintStart_toEndOf="@+id/chBox_Sra"
+                    app:layout_constraintTop_toBottomOf="@+id/txVw_DatosPersonales" />
+
+                <CheckBox
+                    android:id="@+id/chBox_Srta"
+                    style="@style/chBox_Sr_Sra"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="48dp"
+                    android:text="@string/chBox_Srta"
+                    app:layout_constraintStart_toEndOf="@+id/chBox_Srto"
+                    app:layout_constraintTop_toBottomOf="@+id/txVw_DatosPersonales" />
+
+                <TextView
+                    android:id="@+id/tV_Nombre"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/tv_lMTop_Default"
+                    android:text="@string/tV_Nombre"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chBox_Sr" />
+
+                <EditText
+                    android:id="@+id/eT_Nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eT_lMRightDefault"
+                    android:layout_marginBottom="@dimen/eT_lMBottomDefault"
+                    android:ems="10"
+                    android:hint="@string/eT_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:textColorHint="@color/textColor_ET"
+                    app:layout_constraintBottom_toBottomOf="@+id/tV_Nombre"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/tV_Apellidos"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/tv_lMTop_Default"
+                    android:text="@string/tV_Apellidos"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tV_Nombre" />
+
+                <EditText
+                    android:id="@+id/eT_Apellidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eT_lMRightDefault"
+                    android:layout_marginBottom="@dimen/eT_lMBottomDefault"
+                    android:ems="10"
+                    android:hint="@string/eT_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:textColorHint="@color/textColor_ET"
+                    app:layout_constraintBottom_toBottomOf="@+id/tV_Apellidos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/tV_Direccion"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/tv_lMTop_Default"
+                    android:text="@string/tV_Direccion"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tV_Apellidos" />
+
+                <EditText
+                    android:id="@+id/eT_Direccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eT_lMRightDefault"
+                    android:layout_marginBottom="@dimen/eT_lMBottomDefault"
+                    android:ems="10"
+                    android:hint="@string/eT_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:textColorHint="@color/textColor_ET"
+                    app:layout_constraintBottom_toBottomOf="@+id/tV_Direccion"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/tV_Telefono"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/tv_lMTop_Default"
+                    android:text="@string/tV_Telefono"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tV_Direccion" />
+
+                <EditText
+                    android:id="@+id/eT_Telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eT_lMRightDefault"
+                    android:layout_marginBottom="@dimen/eT_lMBottomDefault"
+                    android:ems="10"
+                    android:hint="@string/eT_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:textColorHint="@color/textColor_ET"
+                    app:layout_constraintBottom_toBottomOf="@+id/tV_Telefono"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/tV_Correo"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/tv_lMTop_Default"
+                    android:text="@string/tV_Correo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tV_Telefono" />
+
+                <EditText
+                    android:id="@+id/eT_Correo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eT_lMRightDefault"
+                    android:layout_marginBottom="@dimen/eT_lMBottomDefault"
+                    android:ems="10"
+                    android:hint="@string/eT_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:textColorHint="@color/textColor_ET"
+                    app:layout_constraintBottom_toBottomOf="@+id/tV_Correo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/tV_Movilidad"
+                    style="@style/tv_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/tv_lMTop_Default"
+                    android:text="@string/tv_Movilidad"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tV_Correo" />
+
+                <RadioGroup
+                    android:id="@+id/rGroup_Movilidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginBottom="@dimen/eT_lMBottomDefault"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    app:layout_constraintBottom_toBottomOf="@+id/tV_Movilidad"
+                    app:layout_constraintStart_toEndOf="@+id/tV_Movilidad">
+
+                    <RadioButton
+                        android:id="@+id/rBt_Si"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false"
+                        android:minHeight="@dimen/minHeight_Fix"
+                        android:text="@string/rBt_Si" />
+
+                    <RadioButton
+                        android:id="@+id/rBt_No"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:checked="false"
+                        android:minHeight="@dimen/minHeight_Fix"
+                        android:text="@string/rBt_No" />
+
+                </RadioGroup>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintL_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/chBox_PrimeraClase"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:text="@string/chBox_PrimeraClase"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/chBox_AsientoVentanilla"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:text="@string/chBox_AsientoVentanilla"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chBox_PrimeraClase" />
+
+                <CheckBox
+                    android:id="@+id/chBox_Mascota"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:text="@string/chBox_Mascota"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chBox_AsientoVentanilla" />
+
+                <CheckBox
+                    android:id="@+id/chBox_Desayuno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:layout_marginEnd="@dimen/lMarginDefault"
+                    android:layoutDirection="rtl"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:text="@string/chBox_Desayuno"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chBox_Mascota" />
+
+                <CheckBox
+                    android:id="@+id/chBox_Almuerzo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:layout_marginEnd="@dimen/lMarginDefault"
+                    android:layoutDirection="rtl"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:text="@string/chBox_Almuerzo"
+                    app:layout_constraintEnd_toStartOf="@+id/chBox_Desayuno"
+                    app:layout_constraintTop_toBottomOf="@+id/chBox_Mascota" />
+
+                <CheckBox
+                    android:id="@+id/chBox_Cena"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:layout_marginEnd="@dimen/lMarginDefault"
+                    android:layoutDirection="rtl"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:text="@string/chBox_Cena"
+                    app:layout_constraintEnd_toStartOf="@+id/chBox_Almuerzo"
+                    app:layout_constraintTop_toBottomOf="@+id/chBox_Mascota" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintL_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch_SeguroAdicional"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:text="@string/switch_SeguroAdicional"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Switch
+                    android:id="@+id/switch_AccesoPreferente"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:minHeight="@dimen/minHeight_Fix"
+                    android:text="@string/switch_AccesoPreferente"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/switch_SeguroAdicional" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintL_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_LeerCondiciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:layout_marginBottom="@dimen/lMarginDefault"
+                    android:autoLink="web"
+                    android:text="@string/tv_LeerCondiciones"
+                    app:layout_constraintBottom_toTopOf="@+id/bt_Comprar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bt_Comprar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/lMarginDefault"
+                    android:layout_marginTop="@dimen/lMarginDefault"
+                    android:layout_marginBottom="@dimen/lMarginDefault"
+                    android:text="@string/bt_Comprar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_LeerCondiciones" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

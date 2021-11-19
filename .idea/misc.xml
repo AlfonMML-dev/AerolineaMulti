@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/PrograMulti/Tema2/Aerolinea_V/app/src/main/res/drawable/bt_style.xml" value="0.3828125" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/PrograMulti/Tema2/Aerolinea_V/app/src/main/res/drawable/ibt_style.xml" value="0.3828125" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/PrograMulti/Tema2/Aerolinea_V/app/src/main/res/drawable/ic_baseline_add_location_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/PrograMulti/Tema2/Aerolinea_V/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/PrograMulti/Tema2/Aerolinea_V/app/src/main/res/layout/bt_style.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/PrograMulti/Tema2/Aerolinea_V/app/src/main/res/layout/condiciones_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/PrograMulti/Tema2/Aerolinea_V/app/src/main/res/layout/resumen_compra_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alfonso/Desktop/CicloFPDAM_21-22/PrograMulti/Tema2/Aerolinea_V/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
